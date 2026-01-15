@@ -11,6 +11,8 @@ RUN pip install pyspark==4.0.1
 RUN pip install deltalake==1.2.0
 RUN pip install kafka-python==2.2.13
 
+WORKDIR /home/developer
+
 CMD ["python3", "-m", "jupyterlab", "--ip", "0.0.0.0", "--allow-root"]
 
 # CMD [ "pyspark" ]
